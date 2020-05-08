@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Lato, Ubuntu, sans-serif;
+}
+
+:root {
+    --background-color: rgb(0, 51, 0);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #DDD5;
+}
+
+/* === Header === */
+header {
+    background-color: var(--background-color);
+    color: white;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+/* === Index === */
+main h3.subtitle {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.index {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.index__item {
+    background-color: var(--background-color);
+    border: 6px solid lightgreen;
+    border-top: none;
+    border-left: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 767px){
+    .index {
+        grid-template-columns: 1fr;
+    }
+}
